@@ -20,3 +20,30 @@ list = list.where((w) => w % 2!= 0).toList();
 print(list);
 }
 /*
+//Задание 3 
+//
+void main() {
+  int a = 5;
+   List<List<int>> matrissa = [[1, 1, 1, 1, 1],
+                             [1, 1, 1, 1, 1],
+                             [1, 1, 1, 1, 1],
+                             [1, 1, 1, 1, 1],
+                             [1, 1, 1, 1, 1]];
+   for (int i = 0; i < a; i++){
+     for (int j = 0; j < a; j++){
+       if (i == 0 || j == 0){
+         matrissa[i][j] = 1;
+       }
+     else{
+        matrissa[i][j] = matrissa[i - 1][j] + matrissa[i][j - 1];
+       }
+     }
+   }
+   for (int i = 0; i < a; i++){
+   for (int j = 0; j < a; j++){
+       stdout.write("${matrissa[i][j]}   ");
+     }
+     print("");
+   }
+}
+/*
