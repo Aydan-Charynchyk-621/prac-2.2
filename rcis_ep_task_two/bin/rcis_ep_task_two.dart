@@ -51,4 +51,3 @@ public class Program
         myInfo.Info();
     }
 }
-
